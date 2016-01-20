@@ -5,10 +5,12 @@
     <body>
       <h1>Let's do some riotjs</h1>
       <hello-world greet="John"></hello-world>
+      <hello-world></hello-world>
+      <hello-form></hello-form>
       <script src="bower_components/riot/riot.min.js"></script>
-      <script src="tags/hello-world.js"></script>
+      <script src="tags/all.js"></script>
       <script>
-        riot.mount('hello-world')
+        riot.mount('*', {greet: "Joe"})
       </script>
     </body>
 </html>
