@@ -1,3 +1,3 @@
 <hello-world>
-  <h2>Hello world</h2>
+  <h2>Hello {opts.greet}</h2>
 </hello-world>
