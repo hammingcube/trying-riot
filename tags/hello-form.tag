@@ -3,9 +3,10 @@
     <input type="text" name="greet">
     <button>Say Hello</button>
   </form>
-  <h2>Hello {this.greeting}</h2>
+  <hello-world show={this.greeting} greet={this.greeting}></hello-world>
   <script>
-    this.sayHello = function() {
+    sayHello() {
+      // changing greeting
       this.greeting = this.greet.value
       this.greet.value = ''
     }
